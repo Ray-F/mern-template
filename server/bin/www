@@ -7,12 +7,14 @@
 var app = require('../app');
 var debug = require('debug');
 var http = require('http');
+var config = require('../utils/config');
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '9002');
+var port = normalizePort(process.env.PORT);
+console.log("[Server] Hosted on port:", port)
 app.set('port', port);
 
 /**
