@@ -9,8 +9,8 @@
   "private": false,
   "scripts": {
     "start": "yarn run dev",
-    "dev": "concurrently \"cd client && yarn run start\" \"cd genie-server && yarn run start\"",
-    "init": "concurrently \"cd client && yarn install\" \"cd genie-server && yarn install\""
+    "dev": "concurrently \"cd client && yarn run start\" \"cd server && yarn run start\"",
+    "init": "concurrently \"cd client && yarn install\" \"cd server && yarn install\""
   },
   "dependencies": {
     "concurrently": "^5.3.0"
