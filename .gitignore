@@ -3,6 +3,7 @@
 /node_modules
 
 # enviroment
+.env
 .env.*
 !.env.example
 
