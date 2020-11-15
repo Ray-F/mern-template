@@ -13,7 +13,7 @@ var config = require('../utils/config');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT);
+var port = normalizePort(process.env.PORT || 9002);
 console.log("[Server] Hosted on port:", port)
 app.set('port', port);
 
