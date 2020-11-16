@@ -2,7 +2,13 @@
 */node_modules
 /node_modules
 
-# enviroment
+# builds
+*/build
+*/build-latest
+/build
+/build-latest
+
+# environment
 .env
 .env.*
 !.env.example
