@@ -1,4 +1,4 @@
-const {Router} = require('express');
+const { Router } = require('express');
 
 const defaultController = require('../controllers/defaultController');
 
@@ -11,7 +11,7 @@ router.get('/hello', defaultController.helloWorld);
 // const inputRouter = require('./anotherRouter');
 // router.use("/api/inputs", inputRouter);
 
-router.use("/", (req, res, next) => {
+router.use('/api', (req, res) => {
   res.send(`
     <h2>Express API</h2>
     <p>
@@ -20,8 +20,6 @@ router.use("/", (req, res, next) => {
     </p>
   `);
 });
-
-
 
 
 module.exports = router;
