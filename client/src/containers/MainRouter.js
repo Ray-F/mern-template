@@ -1,22 +1,18 @@
-import React, {Component} from 'react';
-
+import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 import IndexPage from './pages/IndexPage';
 
 
-class MainRouter extends Component {
+export default function MainRouter() {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route exact path={"/"} component={IndexPage} />
 
-  render() {
-    return (
-      <BrowserRouter>
-        <Switch>
-          <Route exact path={"/"} component={IndexPage} />
-          <Route path={"/"} component={IndexPage} />
-        </Switch>
-      </BrowserRouter>
-    );
-  }
+        {/* Default path if nothing matches */}
+        <Route path={"/"} component={IndexPage} />
+      </Switch>
+    </BrowserRouter>
+  )
 }
-
-export default MainRouter;
