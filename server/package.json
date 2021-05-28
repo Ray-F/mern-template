@@ -4,7 +4,12 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "dev": "nodemon -e js,json,ts --watch src --exec babel-node ./src/bin/www.js --extensions '.ts,.js'",
+    "clean": "rm -rf dist",
+    "prebuild": "yarn run clean",
+    "build": "babel src -d dist --extensions '.ts,.js'",
+    "prestart": "yarn run build",
+    "start": "node dist/bin/www.js"
   },
   "dependencies": {
     "babel-plugin-add-module-exports": "^1.0.4",

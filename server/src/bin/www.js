@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-require('../utils/config');
+require('../utils/Config');
 const app = require('../app');
 const debug = require('debug');
 const http = require('http');

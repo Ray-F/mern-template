@@ -1,15 +1,16 @@
-const { Router } = require('express');
+import { Router } from 'express';
 
-const defaultController = require('../controllers/defaultController');
+import defaultController from '../controllers/DefaultController';
 
 const router = Router();
 
-
 router.get('/hello', defaultController.helloWorld);
 
-// To add another router:
-// const inputRouter = require('./anotherRouter');
-// router.use("/api/inputs", inputRouter);
+/*
+ * To use another controller, use:
+ * import controllerName from '../controllers/<ControllerName>';
+ * router.get|put|post|delete|use('/<path-name>', <controllerName>.<controllerMethod)
+ */
 
 router.use('/api', (req, res) => {
   res.send(`
