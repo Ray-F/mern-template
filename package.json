@@ -9,7 +9,7 @@
   "private": false,
   "scripts": {
     "start": "yarn run dev",
-    "dev": "concurrently \"cd client && yarn run start\" \"cd server && yarn run start\"",
+    "dev": "concurrently \"cd client && yarn run start\" \"cd server && yarn run dev\"",
     "init": "concurrently \"cd client && yarn install\" \"cd server && yarn install\""
   },
   "dependencies": {
