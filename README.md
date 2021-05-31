@@ -2,8 +2,7 @@
 
 This is a template repository used to quickly bootstrap MERN applications.
 
-[![Linter](https://github.com/Ray-F/mern-template/actions/workflows/ci.yml/badge.svg)](https://github.com/Ray-F/mern-template/actions/workflows/linter.yml)
-
+[![Linter](https://github.com/Ray-F/mern-template/actions/workflows/Linter.yml/badge.svg)](https://github.com/Ray-F/mern-template/actions/workflows/Linter.yml)
 
 ### Default Technologies
 
