@@ -2,6 +2,8 @@
 
 This is a template repository used to quickly bootstrap MERN applications.
 
+[![CI](https://github.com/Ray-F/mern-template/actions/workflows/ci.yml/badge.svg)](https://github.com/Ray-F/mern-template/actions/workflows/ci.yml)
+
 
 ### Default Technologies
 
