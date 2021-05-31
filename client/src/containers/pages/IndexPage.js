@@ -5,5 +5,5 @@ export default function IndexPage() {
     <React.Fragment>
       <h1>Index Page</h1>
     </React.Fragment>
-  )
+  );
 }

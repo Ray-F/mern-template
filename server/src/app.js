@@ -25,7 +25,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname + '/../../client/build-latest/index.html'));
 });
 
-
 // Error handler
 app.use((err, req, res) => {
   // Set locals, only providing error in development

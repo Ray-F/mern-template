@@ -22,5 +22,4 @@ router.use('/api', (req, res) => {
   `);
 });
 
-
 module.exports = router;
