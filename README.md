@@ -1,4 +1,4 @@
-# @Ray-F's MERN Template
+# Ray's MERN Template
 
 This is a template repository used to quickly bootstrap MERN applications.
 
