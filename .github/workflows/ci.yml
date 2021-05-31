@@ -27,7 +27,7 @@ jobs:
       
       # Installs dev dependencies
       - name: Install dev dependencies
-      - run: yarn install
+        run: yarn install
 
       # Runs a single command using the runners shell
       - name: Run prettify
