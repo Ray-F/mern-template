@@ -8,11 +8,13 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "prettier": "prettier --check client/src server/src",
     "start": "yarn run dev",
     "dev": "concurrently \"cd client && yarn run start\" \"cd server && yarn run dev\"",
     "init": "concurrently \"cd client && yarn install\" \"cd server && yarn install\""
   },
-  "dependencies": {
+  "devDependencies": {
+    "prettier": "^2.3.0",
     "concurrently": "^5.3.0"
   }
 }
