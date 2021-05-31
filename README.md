@@ -1,4 +1,4 @@
-# Ray's MERN Template
+# Opinionated MERN Template
 
 This is a template repository used to quickly bootstrap MERN applications.
 
