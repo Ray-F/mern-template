@@ -13,9 +13,12 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "styled-components": "^5.3.0",
+    "typescript": "^4.3.5",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "prettier": "prettier --check src",
+    "prettify": "prettier --write src",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,5 +42,10 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:9002"
+  "proxy": "http://localhost:9002",
+  "devDependencies": {
+    "@types/react-router-dom": "^5.1.7",
+    "@types/styled-components": "^5.1.11",
+    "prettier": "^2.3.2"
+  }
 }

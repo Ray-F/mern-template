@@ -1,5 +1,5 @@
 {
-  "name": "MERN-Template",
+  "name": "mern-template",
   "version": "1.0.0",
   "description": "a MERN stack application",
   "main": "index.js",
@@ -8,14 +8,13 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "prettier": "prettier --check client/src server/src",
-    "prettify": "prettier --write client/src server/src",
+    "prettier": "cd client && yarn run prettier && cd ../server && yarn run prettier",
+    "prettify": "cd client && yarn run prettify && cd ../server && yarn run prettify",
     "start": "yarn run dev",
     "dev": "concurrently \"cd client && yarn run start\" \"cd server && yarn run dev\"",
     "init": "concurrently \"cd client && yarn install\" \"cd server && yarn install\""
   },
   "devDependencies": {
-    "prettier": "^2.3.0",
     "concurrently": "^5.3.0"
   }
 }

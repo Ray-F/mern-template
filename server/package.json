@@ -4,8 +4,10 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "nodemon -e js,json,ts --watch src --exec babel-node ./src/bin/www.js --extensions '.ts,.js'",
-    "clean": "rm -rf dist",
+    "prettier": "prettier --check src",
+    "prettify": "prettier --write src",
+    "dev": "nodemon -e js,json,ts --watch src --exec babel-node ./src/bin/www.js --extensions .ts,.js",
+    "clean": "rimraf dist",
     "prebuild": "yarn run clean",
     "build": "babel src -d dist --extensions '.ts,.js'",
     "prestart": "yarn run build",
@@ -35,7 +37,9 @@
     "@babel/plugin-transform-typescript": "^7.13.0",
     "@babel/preset-env": "^7.13.10",
     "@babel/preset-typescript": "^7.13.0",
-    "@types/node": "^14.14.33"
+    "@types/node": "^14.14.33",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2"
   },
   "babel": {
     "presets": [
