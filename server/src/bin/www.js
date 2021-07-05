@@ -4,7 +4,7 @@ import app from '../app';
 import debug from 'debug';
 import http from 'http';
 
-import Config from '../utils/Config';
+import Config from '../util/Config';
 
 
 // Get the port

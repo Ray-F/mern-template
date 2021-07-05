@@ -1,5 +1,5 @@
 /**
- * All controllers should extend from the base controller.
+ * All controller should extend from the base controller.
  */
 class BaseController {}
 

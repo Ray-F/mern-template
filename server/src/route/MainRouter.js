@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { DefaultController } from '../controllers/DefaultController';
+import { DefaultController } from '../controller/DefaultController';
 
 /*
- * Main routing file to manage all application routes.
+ * Main routing file to manage all application route.
  */
 
 const defaultController = new DefaultController();

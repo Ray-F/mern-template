@@ -3,7 +3,7 @@ import { BaseController } from './BaseController';
 class DefaultController extends BaseController {
 
   /**
-   * Default landing page for non implemented /api routes.
+   * Default landing page for non implemented /api route.
    */
   async api404(req, res) {
     res.send(`
