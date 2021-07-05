@@ -1,0 +1,7 @@
+interface DomainModel {
+
+}
+
+export {
+  DomainModel
+}
