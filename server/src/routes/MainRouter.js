@@ -1,25 +1,14 @@
 import { Router } from 'express';
-
-import defaultController from '../controllers/DefaultController';
-
-const router = Router();
-
-router.get('/hello', defaultController.helloWorld);
+import { DefaultController } from '../controllers/DefaultController';
 
 /*
- * To use another controller, use:
- * import controllerName from '../controllers/<ControllerName>';
- * router.get|put|post|delete|use('/<path-name>', <controllerName>.<controllerMethod)
+ * Main routing file to manage all application routes.
  */
 
-router.use('/api', (req, res) => {
-  res.send(`
-    <h2>Express API</h2>
-    <p>
-      You have reached the express API.
-      Email rf.raymondfeng@gmail.com for any questions on usage.
-    </p>
-  `);
-});
+const defaultController = new DefaultController();
 
-module.exports = router;
+const router = Router();
+router.use('/api', defaultController.api404);
+
+
+export default router;
