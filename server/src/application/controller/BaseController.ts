@@ -3,7 +3,4 @@
  */
 class BaseController {}
 
-
-export {
-  BaseController,
-};
+export { BaseController };

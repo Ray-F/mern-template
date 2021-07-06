@@ -5,7 +5,6 @@ import { logger } from '../util/Logger';
  * A singleton adapter that allows access to MongoDB cluster through a unique mongo uri.
  */
 class MongoAdapter {
-
   /**
    * The database instance.
    */
@@ -18,7 +17,6 @@ class MongoAdapter {
   private client: MongoClient;
 
   private static _instance: MongoAdapter;
-
 
   private constructor(uri: string, dbName: string) {
     const client = new MongoClient(uri, {
@@ -39,12 +37,11 @@ class MongoAdapter {
     return this.client.db(dbName);
   }
 
-
   /**
    * Builds a MongoAdapter using a `uri` and default `dbName`.
    */
   public static build(uri: string, dbName: string): MongoAdapter {
-    if (this._instance) throw new Error("MongoAdapter already built!");
+    if (this._instance) throw new Error('MongoAdapter already built!');
 
     this._instance = new this(uri, dbName);
     return this._instance;
@@ -54,13 +51,9 @@ class MongoAdapter {
    * Get the current `MongoAdapter` instance if it exists, or
    */
   public static getInstance(): MongoAdapter {
-    if (!this._instance) throw new Error("No instance of MongoAdapter exists!");
+    if (!this._instance) throw new Error('No instance of MongoAdapter exists!');
     return this._instance;
   }
-
 }
 
-
-export {
-  MongoAdapter,
-};
+export { MongoAdapter };

@@ -1,9 +1,7 @@
 import { BaseController } from './BaseController';
 import { Request, Response } from 'express';
 
-
 class DefaultController extends BaseController {
-
   /**
    * Default landing page for non implemented /api route.
    */
@@ -19,10 +17,6 @@ class DefaultController extends BaseController {
       </p>
     `);
   }
-
 }
 
-
-export {
-  DefaultController,
-};
+export { DefaultController };

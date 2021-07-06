@@ -1,5 +1,4 @@
 class Logger {
-
   logInfo(message: string) {
     console.log(Logger.generateLogString(message));
   }
@@ -9,17 +8,16 @@ class Logger {
   }
 
   logError(message?: string) {
-    console.error(Logger.generateLogString(message || 'An unknown error occurred'));
+    console.error(
+      Logger.generateLogString(message || 'An unknown error occurred')
+    );
   }
 
   private static generateLogString(message: string): string {
     return `[Server] ${message}`;
   }
-
 }
 
 const logger = new Logger();
 
-export {
-  logger
-}
+export { logger };

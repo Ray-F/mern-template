@@ -8,19 +8,16 @@ import Config from '../util/Config';
 import { logger } from '../util/Logger';
 import chalk from 'chalk';
 
-
 // Get the port
 const port = normalizePort(Config.PORT);
-logger.logInfo("Hosted on port: " + chalk.yellow(port));
+logger.logInfo('Hosted on port: ' + chalk.yellow(port));
 app.set('port', port);
-
 
 // Create HTTP server
 const server = http.createServer(app);
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
-
 
 /**
  * Normalizes a port into a number, string, or false.
@@ -30,7 +27,6 @@ function normalizePort(val) {
 
   return isNaN(port) ? val : port >= 0 ? port : false;
 }
-
 
 /**
  * Event listener for HTTP server "error" event.
