@@ -9,7 +9,7 @@
     "dev": "nodemon -e js,json,ts --watch src --exec babel-node ./src/bin/www.js --extensions .ts,.js",
     "clean": "rimraf dist",
     "prebuild": "yarn run clean",
-    "build": "babel src -d dist --extensions '.ts,.js'",
+    "build": "babel src -d dist --extensions .ts,.js",
     "prestart": "yarn run build",
     "start": "node dist/bin/www.js"
   },
