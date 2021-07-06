@@ -3,8 +3,6 @@ import * as path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import router from './application/route/MainRouter';
-import { MongoAdapter } from './infrastructure/datastore/MongoAdapter';
-import Config from './util/Config';
 
 const app = express();
 

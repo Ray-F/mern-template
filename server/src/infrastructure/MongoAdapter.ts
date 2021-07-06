@@ -1,5 +1,5 @@
 import { Db, MongoClient } from 'mongodb';
-import { logger } from '../../util/Logger';
+import { logger } from '../util/Logger';
 
 /**
  * A singleton adapter that allows access to MongoDB cluster through a unique mongo uri.
