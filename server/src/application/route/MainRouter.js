@@ -5,9 +5,10 @@ import { DefaultController } from '../controller/DefaultController';
  * Main routing file to manage all application route.
  */
 
-const defaultController = new DefaultController();
 
 const router = Router();
+
+const defaultController = new DefaultController();
 router.use('/api', defaultController.api404);
 
 

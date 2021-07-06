@@ -1,9 +1,9 @@
 /**
- * All controller should extend from the base controller.
+ * The root controller that all other controllers will extend from.
  */
 class BaseController {}
 
 
 export {
-  BaseController
-}
+  BaseController,
+};

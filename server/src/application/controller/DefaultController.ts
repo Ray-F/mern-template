@@ -1,11 +1,13 @@
 import { BaseController } from './BaseController';
+import { Request, Response } from 'express';
+
 
 class DefaultController extends BaseController {
 
   /**
    * Default landing page for non implemented /api route.
    */
-  async api404(req, res) {
+  async api404(req: Request, res: Response) {
     res.send(`
       <h2>MERN-Template Express API</h2>
       <p>

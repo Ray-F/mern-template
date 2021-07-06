@@ -3,6 +3,8 @@ import * as path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import router from './application/route/MainRouter';
+import { MongoAdapter } from './infrastructure/datastore/MongoAdapter';
+import Config from './util/Config';
 
 const app = express();
 
@@ -26,12 +28,15 @@ app.get('*', (req, res) => {
 });
 
 // Error handler
-app.use((err, req, res) => {
+app.use((err, req, res, next) => {
   // Set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  res.status(err.status || 500).send(err.message);
+  res.status(err.status || 500).send(`
+  <h2>Error ${err.statusCode}</h2>
+  <p>${err.message}</p>
+  `);
 });
 
 module.exports = app;

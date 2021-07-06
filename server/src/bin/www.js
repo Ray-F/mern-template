@@ -5,11 +5,13 @@ import debug from 'debug';
 import http from 'http';
 
 import Config from '../util/Config';
+import { logger } from '../util/Logger';
+import chalk from 'chalk';
 
 
 // Get the port
 const port = normalizePort(Config.PORT);
-console.log('[Server] Hosted on port:', port);
+logger.logInfo("Hosted on port: " + chalk.yellow(port));
 app.set('port', port);
 
 
