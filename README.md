@@ -7,15 +7,18 @@ This is a template repository used to quickly bootstrap MERN applications.
 ### Default Technologies
 
 #### Client Side
-- React (using `create-react-app`)
+- React (bootstrapped from `create-react-app`)
+- Styled Components
+- React Router
+- Typescript support (generally not recommend for client)
 
 #### Server Side
-- Express (using `express-generator`)
+- Express (bootstrapped from `express-generator`)
 - Babel ES6 modules (using `import / export` instead of `require()` and `module.exports`)
 - Typescript support
 
 ### Compatability Notes:
-- Inside `server/package.json`, the `clean` script will not work correctly on Windows machines. Refer to this [stack overflow link](https://stackoverflow.com/questions/97875/rm-rf-equivalent-for-windows) to find out the equivalent `Cmd.exe` or `PowerShell` command.
+- n/a
 
 ### Setup
 - You should ideally be using yarn version `14.5.*` to make this repository work.
