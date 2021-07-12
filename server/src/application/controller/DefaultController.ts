@@ -1,5 +1,9 @@
 import { BaseController } from './BaseController';
 import { Request, Response } from 'express';
+import { MongoAdapter } from '../../infrastructure/MongoAdapter';
+
+// Mongo service for connecting to the database
+const mongoService = MongoAdapter.getInstance();
 
 class DefaultController extends BaseController {
   /**
