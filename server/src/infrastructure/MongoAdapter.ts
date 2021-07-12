@@ -5,6 +5,7 @@ import { logger } from '../util/Logger';
  * A singleton adapter that allows access to MongoDB cluster through a unique mongo uri.
  */
 class MongoAdapter {
+
   /**
    * The database instance.
    */
@@ -12,7 +13,6 @@ class MongoAdapter {
 
   /**
    * Private MongoClient for purposes of getting another database from the same adapter instance.
-   * @private
    */
   private client: MongoClient;
 
