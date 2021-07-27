@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './containers/App';
+import MainRouter from './pages/MainRouter';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import 'normalize.css';
+import './styles/style.scss';
+
+ReactDOM.render(<MainRouter />, document.getElementById('root'));

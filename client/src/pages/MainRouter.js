@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import IndexPage from './pages/IndexPage';
+import IndexPage from './IndexPage';
 
 export default function MainRouter() {
   return (
