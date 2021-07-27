@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
-import app from '../app';
+import app from './application/App';
 import debug from 'debug';
 import http from 'http';
 
-import Config from '../util/Config';
-import { logger } from '../util/Logger';
+import Config from './util/Config';
+import { logger } from './util/Logger';
 import chalk from 'chalk';
 
 // Get the port

@@ -1,6 +1,6 @@
 import { BaseController } from './BaseController';
 import { Request, Response } from 'express';
-import { MongoAdapter } from '../../infrastructure/MongoAdapter';
+import { MongoAdapter } from '../../repository/service/MongoAdapter';
 
 // Mongo service for connecting to the database
 const mongoService = MongoAdapter.getInstance();

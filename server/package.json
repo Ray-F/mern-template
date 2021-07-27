@@ -6,12 +6,12 @@
   "scripts": {
     "prettier": "prettier --check src",
     "prettify": "prettier --write src",
-    "dev": "nodemon -e js,json,ts --watch src --exec babel-node ./src/bin/www.js --extensions .ts,.js",
+    "dev": "nodemon -e js,json,ts --watch src --exec babel-node src/server.ts --extensions .ts,.js",
     "clean": "rimraf dist",
     "prebuild": "yarn run clean",
     "build": "babel src -d dist --extensions .ts,.js",
     "prestart": "yarn run build",
-    "start": "node dist/bin/www.js"
+    "start": "node dist/server.js"
   },
   "dependencies": {
     "babel-plugin-add-module-exports": "^1.0.4",

@@ -1,4 +1,4 @@
-import { MongoAdapter } from '../../infrastructure/MongoAdapter';
+import { MongoAdapter } from '../../repository/service/MongoAdapter';
 import Config from '../../util/Config';
 
 // TODO: Replace this db-name with the correct name
